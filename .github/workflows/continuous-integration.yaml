@@ -92,7 +92,7 @@ jobs:
 
       - name: Add coverage to PR
         id: jacoco
-        uses: madrapps/jacoco-report@v1.7.1
+        uses: madrapps/jacoco-report@v1.7.2
         if: github.event_name == 'pull_request'
         with:
           paths: |
@@ -125,7 +125,7 @@ jobs:
           echo "The complete JaCoCo HTML report is available as an artifact named \`jacoco-report\`" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload JaCoCo coverage report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: jacoco-report
           path: target/site/jacoco/
@@ -202,7 +202,7 @@ jobs:
 
       # login to ECR to we can pull HCD image.
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v5
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-access-key-id: ${{ secrets.HCD_ECR_ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.HCD_ECR_SECRET_KEY }}
