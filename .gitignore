@@ -1,44 +1,44 @@
+
+!/docker-compose/.env
+# Eclipse
+# IntelliJ
+# Local environment
+# NetBeans
+# NoSQLBench
+# OSX
+# Vim
+# Visual Studio Code
+# patch
 #Maven
-target/
-pom.xml.tag
+*.db
+*.iml
+*.ipr
+*.iws
+*.log
+*.orig
+*.partial
+*.pid
+*.rej
+*.sqlite
+*.swo
+*.swp
+.DS_Store
+.cache/
+.classpath
+.env
+.env*
+.factorypath
+.flattened-pom.xml
+.idea
+.project
+.settings/
+.vscode
+__pycache__/
+bin/
+logs/node_modules/
+nb-configuration.xml
 pom.xml.releaseBackup
+pom.xml.tag
 pom.xml.versionsBackup
 release.properties
-.flattened-pom.xml
-
-# Eclipse
-.project
-.classpath
-.settings/
-bin/
-
-# IntelliJ
-.idea
-*.ipr
-*.iml
-*.iws
-
-# NetBeans
-nb-configuration.xml
-
-# Visual Studio Code
-.vscode
-.factorypath
-
-# OSX
-.DS_Store
-
-# Vim
-*.swp
-*.swo
-
-# patch
-*.orig
-*.rej
-
-# Local environment
-.env
-!/docker-compose/.env
-
-# NoSQLBench
-logs/
+target/
